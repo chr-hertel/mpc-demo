@@ -3,7 +3,7 @@ inspector:
 
 restart:
 	symfony server:stop
-	symfony server:start -d
+	symfony server:start -d --no-tls
 	symfony server:log
 
 ci: codestyle phpstan test
